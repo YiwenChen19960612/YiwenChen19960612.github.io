@@ -53,14 +53,14 @@
     </style>
 
     <script>
-            function sayHello()
+            function sayHello(t)
             {
 
                  //console.log("sayHello");
                 //speechSynthesis.speak(new SpeechSynthesisUtterance('Hello'));
 
                 var speech = new SpeechSynthesisUtterance();
-                speech.text = "台中科技大學";
+                speech.text = t;
                 speech.volume = 1; // 0 to 1
                 speech.rate = 1; // 0.1 to 9
                 speech.pitch = 1; // 0 to 2, 1=normal
@@ -73,6 +73,6 @@
     </script>
 </HEAD>
 <body>
-    <div id="tts" onclick="sayHello();">sayHello</div>
+    <div id="tts" onclick="sayHello('台中科技大學呵呵');">sayHello</div>
 </body>
 </HTML>
