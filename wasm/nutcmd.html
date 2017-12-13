@@ -4,7 +4,7 @@
 request = new XMLHttpRequest();
 request.open('GET', 'nutcmd.wasm');
 request.responseType = 'arraybuffer';
-//request.send();
+request.send();
 request.onload = function() 
 {
     let wasmMemory = new WebAssembly.Memory({ initial: 1 });
